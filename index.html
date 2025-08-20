@@ -3,50 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Example: Roboto and Inter -->
+
+    <!-- Linking Google Fonts: Roboto and Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Inter&display=swap" rel="stylesheet">
+
+    <!-- Script for modal functionality -->
     <script src="scripts/modal.js"></script>
+
     <title>Home</title>
 </head>
 <body>
+
+    <!--Top Portion of the page seprated by top-left, top-middle and top-right to customized each area of the section-->
     <div class="top-section">
 
+        <!--Left side of the top section for future content or branding-->
         <div class="top-left">
-            <img id="search" src="assets/search.svg" alt="search" width="32px" height="32px">
+            <!-- Content placeholder -->
         </div>
 
+        <!--Middle area of the top section containing the navigation bar-->
         <div class="top-middle">
             <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="about.html">About</a>
-        </nav>
+                <!-- Navigation links -->
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="about.html">About</a>
+                
+                <!-- Search icon -->
+                <img id="search" src="assets/search.svg" alt="search" width="32px" height="32px">
+            </nav>
         </div>
 
+        <!--Right side of the top section for profile-related content-->
         <div class="top-right">
+            <!-- Profile icon -->
             <img id="profile-icon" src="assets/profile-default.svg" alt="Profile Picture" width="32px" height="32px">
         </div>
 
     </div>
+
+    <!--Middle section of the page containing main content and modal dialog-->
     <div class="middle-section">
+
+        <!--Card container with title, subtitle, paragraph and buttons-->
         <div class="card">
             <h1 class="title">This is a Heading</h1>
             <h2 class="sub-title">This is a Sub Heading</h2>
             <p class="body">This is a body</p>
+
+            <!--Secondary action button-->
             <button class="secondary-button" onclick="alert('Sub Action Clicked!')">Sub Action</button>
+
+            <!--Primary action button to trigger modal-->
             <button class="primary-button" onclick="openModal()">Show Modal</button>
         </div>
+
+        <!--Alert modal overlay section (initially hidden)-->
         <div class="alert-overlay">
+
+            <!--Alert modal box inside the overlay-->
             <div class="alert-box card">
-                <h2 class="dialog-title">Si Clifford kay...</h2>
-                <p>Dako utin</p>
-            <button class="secondary-button" onclick="closeModal()">Close</button>
+                <h2 class="dialog-title">Dialog Box</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+
+                <!--Close button for modal dialog-->
+                <button class="secondary-button" onclick="closeModal()">Close</button>
+            </div>
+
         </div>
-</div>
-    </div>
-    <div class="bottom-section">
 
     </div>
+
+    <!--Bottom section of the page for footer or additional content-->
+    <div class="bottom-section">
+        <!-- Content placeholder -->
+    </div>
+
 </body>
 </html>
